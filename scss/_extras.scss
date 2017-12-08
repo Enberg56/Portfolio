@@ -1,0 +1,45 @@
+//SVG
+
+#linkedin svg{
+    transition: $transitiontime-svg;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: $transitiontime-svg;
+    -webkit-transition-timing-function: ease-in-out;
+    &:hover{
+        fill:theme-color("primary");
+    }
+} 
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+.down{
+    margin-top: 10rem;
+}
+.points span{
+    margin-right: 1rem;
+    line-height: 2;
+    font-weight: 100;
+    font-size: 1rem;
+}
+.underLine span{
+    display:inline-block !important;
+    transition: $transition-base;
+    border-bottom: 3px solid transparent;
+        &:hover{
+            border-bottom:2px solid theme-color("primary");
+        }
+}
+.left {
+    left: 0;
+    -webkit-transform-origin: 0 50%;
+       -moz-transform-origin: 0 50%;
+        -ms-transform-origin: 0 50%;
+         -o-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+    -webkit-transform: rotate(-90deg) translate(-50%, 50%);
+       -moz-transform: rotate(-90deg) translate(-50%, 50%);
+        -ms-transform: rotate(-90deg) translate(-50%, 50%);
+         -o-transform: rotate(-90deg) translate(-50%, 50%);
+            transform: rotate(-90deg) translate(-50%, 50%);
+  }
