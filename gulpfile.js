@@ -7,6 +7,7 @@ var gulp = require('gulp'),
 	notify = require('gulp-notify'),
 	rename = require('gulp-rename'),
 	sass = require('gulp-ruby-sass')
+	twig = require('gulp-twig')
 
 // Compile all the styles
 gulp.task('styles', function() {
@@ -33,9 +34,21 @@ gulp.task('images', function() {
 });
 
 // Watch for updates; compile on save
-gulp.task('watch', function() {
+gulp.task('default', ['templates','styles','images'], function() {
+	// Watch HTML files
+	gulp.watch('src/**/*.html', ['templates']);
 	// Watch SCSS files
 	gulp.watch('scss/**/*.scss', ['styles']);
 	// Watch image files
 	gulp.watch('images/**', ['images']);
 });
+gulp.task('templates', function(){
+	return gulp
+	.src([
+		'src/**/*.html',
+		'!src/layouts/**'
+	], {dot: true})
+	.pipe(twig())
+	.pipe(gulp.dest('dist'))
+}
+)
