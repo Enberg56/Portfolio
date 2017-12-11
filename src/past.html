@@ -12,7 +12,46 @@
             <div class="col-3"></div> <!-- offsetts the text nicely -->
         </div>
         <div class="container">
-        <div class="d-flex flex-row down" data-aos="fade-right">
+        <div class="d-flex flex-row down mb-5" data-aos="fade-up">
+                <div class="d-flex flex-column justify-content-center mr-3">
+                <h3>University of Agder</h3>
+                <p>3 years for a degree in multimedia</p>
+            </div>
+            {% for i in 1..2 %}
+            <div class="col-6 col-md-3 d-flex skew p-0 w-25">
+                <div class="skew-back">
+                    <img src="images/uia/uia{{i}}.jpg" alt="Picture nr {{i}} from KVS">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="d-flex flex-row down mb-5" data-aos="fade-left">
+                <div class="d-flex flex-column justify-content-center mr-3">
+                <h3>Around The World</h3>
+                <p>I worked half a year as a bike mechanic so i could travel the world</p>
+            </div>
+            {% for i in 1..3 %}
+            <div class="col-6 col-md-3 d-flex skew p-0 w-25">
+                <div class="skew-back">
+                    <img src="images/alta/alta{{i}}.jpg" alt="Picture nr {{i}} from Alta">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="d-flex flex-row down mb-5" data-aos="fade-left">
+                <div class="d-flex flex-column justify-content-center mr-3">
+                <h3>Folk-Highschool</h3>
+                <p>1 year skiing, avalanche safety and mountain biking at Alta folkehøyskole</p>
+            </div>
+            {% for i in 1..3 %}
+            <div class="col-6 col-md-3 d-flex skew p-0 w-25">
+                <div class="skew-back">
+                    <img src="images/alta/alta{{i}}.jpg" alt="Picture nr {{i}} from Alta">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="d-flex flex-row down mb-5" data-aos="fade-right">
                 <div class="d-flex flex-column justify-content-center mr-3">
                 <h3>Agriculture</h3>
                 <p>2 years with logging and outdors stuff at KVS Lyngdal</p>

@@ -1,8 +1,8 @@
 {
-  "name": "CodeTime",
+  "name": "CodeTime + twig :)",
   "version": "1.0.0",
-  "author": "The CodeTime Team",
-  "description": "Package.json file for CodeTime.io demo.",
+  "author": "The CodeTime Team ehrem",
+  "description": "Package.json file for CodeTime.io demo. modified",
   "private": false,
   "license": "MIT",
   "devDependencies": {

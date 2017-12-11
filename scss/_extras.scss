@@ -41,7 +41,7 @@ body{
     position: absolute;
     height: 25rem;
     width: 25rem;
-    margin-left: 60rem;
+    margin-left: 50%;
     border-radius: 2rem;
     opacity: 0.7;
     transition: opacity 800ms ease;
@@ -51,14 +51,20 @@ body{
         opacity: 1;
         height: 35rem;
         width: 35rem;
-        margin-left: 50rem;
+        margin-left: 40%;
         z-index: 1
     }
 }
 .right{
     position: absolute;
+    height: 40px;
+    width: 40px;
     top: 50%;
-    left: 97%;    
+    left: 97%;
+    transition: $transitiontime-svg;
+    &:hover{
+        top: 100%;
+    }
 }
 .left {
     position: absolute;
