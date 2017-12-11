@@ -7,6 +7,15 @@ body{
 .medium{
     letter-spacing: 1px;
 }
+#youtube svg{
+    transition: $transitiontime-svg;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: $transitiontime-svg;
+    -webkit-transition-timing-function: ease-in-out;
+    &:hover{
+        fill:#cc181e;
+    }
+} 
 #linkedin svg{
     transition: $transitiontime-svg;
     transition-timing-function: ease-in-out;

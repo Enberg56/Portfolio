@@ -8417,6 +8417,16 @@ body {
   letter-spacing: 1px;
 }
 
+#youtube svg {
+  transition: 300ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 300ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+#youtube svg:hover {
+  fill: #cc181e;
+}
+
 #linkedin svg {
   transition: 300ms;
   transition-timing-function: ease-in-out;
