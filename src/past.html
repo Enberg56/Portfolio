@@ -9,18 +9,22 @@
                 </h2>
                 <p>I'm the type of guy who loves to learn new stuff so far this is what i've done in my life</p>
             </div>
-            <div class="col-3"></div>
-            <!-- offsetts the text nicely -->
+            <div class="col-3"></div> <!-- offsetts the text nicely -->
         </div>
-        <div class="row mt-5">
-            <div class="col-10 col-md-4 col-centered  down my-auto" data-aos="fade-right">
+        <div class="container">
+        <div class="d-flex flex-row down" data-aos="fade-right">
+                <div class="d-flex flex-column justify-content-center mr-3">
                 <h3>Agriculture</h3>
                 <p>2 years with logging and outdors stuff at KVS Lyngdal</p>
             </div>
-            <div class="col-10 col-md-4 col-centered  down" data-aos="fade-left">
-                <img class="my-auto" src="images/row10.jpg" alt="">
+            {% for i in 1..3 %}
+            <div class="col-6 col-md-3 d-flex skew p-0 w-25">
+                <div class="skew-back">
+                    <img src="images/kvs/kvs{{i}}.jpg" alt="Picture nr {{i}} from KVS">
+                </div>
             </div>
-            <!-- offsetts the text nicely -->
+            {% endfor %}
+        </div>
         </div>
     </div>
 {% endblock %}

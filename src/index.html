@@ -1,7 +1,8 @@
 {% extends 'layouts/default.html' %}
 {% set title = "The Front" %}
 {% block content %}
-<div class="row down">
+<img class="col-6 col-md-8 toppimg" src="images/row1.jpg" alt="" id="fgimg">      <!-- forground image -->
+<div class=" row down">
     <div class="col-4 col-centered">
         <!-- col cecntered located in extras.scss -->
         <h2 class="font-weight-bold medium">
@@ -18,19 +19,18 @@
             <span>SEO</span>
         </h3>
     </div>
-    <div class="col-3"></div>
-    <!-- offsetts the text nicely -->
+    <div class="col-3">
+    </div><!-- offsetts the text nicely -->
 </div> 
 <div class="container mt-5">
     <div class="row d-flex justify-content-center mx-5 mt-5 flex-wrap">
         {% for i in 1..10 %}
         <div class="col-6 col-md-3 d-flex skew p-0 w-25">
             <div class="skew-back">
-                <img src="images/row{{i}}.jpg" alt="">
+                <img onclick="changeMe({{i}})" src="images/row{{i}}.jpg" alt="Picture nr {{i}} of me and my past">
             </div>
         </div>
         {% endfor %}
         </div>
-        
 </div>
 {% endblock %}
